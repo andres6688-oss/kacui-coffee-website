@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#354337">
+<meta name="description" content="咖萃咖啡廚房，精選咖啡豆、濾掛咖啡與咖啡禮盒。">
+<title>咖萃咖啡廚房｜讓生活慢一點，讓咖啡香一點</title>
+<style>
+:root{--coffee:#493526;--cream:#faf7f1;--green:#354337;--gold:#8b775f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--coffee);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC",sans-serif}
+a{color:inherit;text-decoration:none}
+.top{background:var(--green);color:white;text-align:center;padding:10px;font-size:11px;letter-spacing:2px}
+header{padding:18px 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e5dbcd}
+.logo{font-family:Georgia,serif;font-size:25px;letter-spacing:4px;font-weight:bold}
+.logo small{display:block;font-family:Arial,sans-serif;font-size:9px;letter-spacing:2px;color:var(--gold);margin-top:5px}
+nav{display:flex;gap:18px;font-size:13px;flex-wrap:wrap}
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:420px}
+.intro{padding:65px 9%;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{font-size:10px;letter-spacing:3px;color:var(--gold)}
+h1,h2{font-family:Georgia,"Noto Serif TC",serif;font-weight:500}
+h1{font-size:clamp(35px,5vw,58px);line-height:1.45;margin:12px 0}
+h1 em{font-style:normal;color:#7d6546}
+p{line-height:1.9}
+.desc{font-size:14px;color:#75695d}
+.btn{display:inline-block;padding:13px 20px;background:var(--green);color:white;font-size:13px;margin:12px 8px 0 0}
+.btn.outline{background:transparent;color:var(--coffee);border:1px solid #bba88f}
+.hero-photo{min-height:350px;background:#cbb69a url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1100&q=85") center/cover}
+section{padding:58px 6%}
+.center{text-align:center}
+h2{font-size:32px;margin:10px 0 28px}
+.categories,.products{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cat{border:1px solid #e5dbcd;padding:22px 12px;background:#eee4d6;text-align:center}
+.cat:nth-child(2){background:#f1e9df}.cat:nth-child(3){background:#e7e9dc}.cat:nth-child(4){background:#e8ded0}
+.cat b{display:block;margin:10px 0}.cat small{color:#817568}
+.product{background:white;padding-bottom:15px}
+.product img{width:100%;aspect-ratio:4/4.4;object-fit:cover;background:#e7d9c5}
+.product h3,.product p,.product .price{margin:10px 12px}
+.product h3{font-size:15px;font-weight:500}
+.product p{font-size:12px;color:#817568}
+.price{font-size:12px}
+.gift{background:#e8dfd2;text-align:center;padding:55px 8%}
+.story{max-width:720px;margin:auto;text-align:center}
+.contact{background:var(--green);color:white;text-align:center}
+.contact .eyebrow{color:#d8c6a8}
+footer{text-align:center;padding:25px;font-size:11px;color:#817568}
+@media(max-width:650px){header{align-items:flex-start;gap:12px;flex-direction:column}.hero{grid-template-columns:1fr}.hero-photo{grid-row:1;min-height:260px}.intro{padding:38px 7%}.categories,.products{grid-template-columns:repeat(2,minmax(0,1fr))}section{padding:42px 5%}h2{font-size:27px}nav{gap:13px}}
+</style>
+</head>
+<body>
+<div class="top">KA CUI COFFEE · 一杯好咖啡，收藏生活的美好</div>
+<header>
+<a class="logo" href="#">咖萃咖啡<small>KA CUI COFFEE KITCHEN</small></a>
+<nav><a href="#products">咖啡商城</a><a href="#story">品牌故事</a><a href="#gift">精選禮盒</a><a href="#contact">聯絡我們</a></nav>
+</header>
+<main>
+<div class="hero">
+<div class="intro"><div class="eyebrow">YOUR DAILY COFFEE RITUAL</div><h1>讓生活慢一點，<br><em>讓咖啡香一點。</em></h1><p class="desc">從日常咖啡到用心準備的節慶禮盒，為每一個值得停留的時刻，萃取一份美好。</p><div><a class="btn" href="#products">探索咖啡商品 ↗</a><a class="btn outline" href="#gift">送禮精選</a></div></div>
+<div class="hero-photo" role="img" aria-label="咖啡沖煮情境"></div>
+</div>
+<section>
+<div class="center"><div class="eyebrow">SHOP BY CATEGORY</div><h2>找到你的日常咖啡</h2></div>
+<div class="categories"><a class="cat" href="#products">☕<b>全部商品</b><small>探索完整風味</small></a><a class="cat" href="#products">◉<b>精選咖啡豆</b><small>手沖與義式</small></a><a class="cat" href="#products">♧<b>濾掛咖啡</b><small>簡單沖泡</small></a><a class="cat" href="#gift">✳<b>咖啡禮盒</b><small>送禮心意</small></a></div>
+</section>
+<section id="products">
+<div class="center"><div class="eyebrow">OUR SELECTION</div><h2>人氣精選</h2></div>
+<div class="products">
+<article class="product"><img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&w=500&q=80" alt="咖啡豆"><h3>日常精選咖啡豆</h3><p>每日現沖的風味提案</p><div class="price">價格待填</div></article>
+<article class="product"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=500&q=80" alt="濾掛咖啡"><h3>隨行濾掛咖啡</h3><p>簡單沖泡，香氣隨行</p><div class="price">價格待填</div></article>
+<article class="product"><img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=500&q=80" alt="配方咖啡豆"><h3>經典醇香配方豆</h3><p>適合每日品飲</p><div class="price">價格待填</div></article>
+<article class="product"><img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=500&q=80" alt="咖啡禮盒"><h3>節慶濾掛咖啡禮盒</h3><p>送禮自用皆宜</p><div class="price">價格待填</div></article>
+</div>
+</section>
+<section class="gift" id="gift"><div class="eyebrow">GIFT WITH WARMTH</div><h2>讓一份咖啡禮盒<br>傳遞你的心意。</h2><p>生日、節慶、企業贈禮，讓咖啡成為心意的延伸。單包、10 入與 20 入禮盒，規格及價格待確認。</p><a class="btn outline" href="#contact">洽詢禮盒與客製需求 ↗</a></section>
+<section class="story" id="story"><div class="eyebrow">OUR STORY</div><h2>咖萃咖啡廚房</h2><p>每一杯咖啡，都是生活的一次萃取。從日常品飲到節日分享，我們希望讓咖啡不只是飲品，更是陪伴、品味與送給重要之人的一份心意。</p></section>
+<section class="contact" id="contact"><div class="eyebrow">LET'S CONNECT</div><h2>一起找到你的咖啡風味</h2><p>咖啡豆・濾掛咖啡・節慶禮盒・企業客製</p><p>蝦皮賣場：網址待填<br>聯絡方式：待填</p></section>
+</main>
+<footer>© 咖萃咖啡廚房 KA CUI COFFEE KITCHEN<br>正式上線前請更新商品資訊、聯絡方式及蝦皮網址。</footer>
+</body>
+</html>
